@@ -22,7 +22,7 @@ class Helloworld(Resource):
 api.add_resource(Helloworld, '/')  # we are routing the response through this command api.add_resource(classname, url path) same like @app.route decorator
 
 if __name__ == '__main__':
-    app.run(debug=True)  # here we are setting up the debug mode so any changes we make in the code will automatically get rwflected in the result
+    app.run(debug=True)  # here we are setting up the debug mode so any changes we make in the code will automatically get reflected in the result
 
 
 
