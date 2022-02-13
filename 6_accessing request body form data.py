@@ -17,7 +17,7 @@ class Book(Resource):
 
         if book_id in book_details:
             return {'Message': 'Book with id :'+book_id+' already exists'}
-        print('Request body contents: '+str(request.form))
+        print('Request body contents: '+str(request.form))  # requesting data
         return {'Message': 'Book with '+book_id+' added'}
 
 api.add_resource(Book, '/book/<string:book_id>')
